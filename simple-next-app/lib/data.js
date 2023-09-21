@@ -105,7 +105,6 @@ export function getCatIds(){
   
 }
 
-
 export async function getData(idRequested){
       // get filepath to json file
   const filePath = path.join(dataDir, 'dogs.json');
@@ -125,21 +124,6 @@ export async function getData(idRequested){
   let objReturned;
   if (objMatch.length>0){
     objReturned = objMatch[0];
-    // relate the dog to any data it owns from offspring 
-    const filePath2 = path.join(dataDir, 'offspring.json');
-    
-    const jsonString2 = fs.readFileSync(filePath2,'utf8');
-    
-    const jsonObj2 = JSON.parse(jsonString2);
-    
-    const objMatch2 = jsonObj2.filter(
-      function(obj){
-        return obj.owner.toString() === idRequested;
-      }
-    );
-    objReturned.offspring = objMatch2
-
-    
   } else {
     objReturned = {};
   }

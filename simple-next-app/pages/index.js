@@ -16,7 +16,7 @@ export default function Home({ allData, moreData }) {
     <Layout home>
       <h1>Famous Dogs</h1>
       <div className="list-group">
-        {allData && allData.map(({ id, name }) => (
+        {allData.map(({ id, name }) => (
           <Link
             key={id}
             href={`/${id}`}
@@ -28,7 +28,7 @@ export default function Home({ allData, moreData }) {
       </div>
       <h1>Famous Cats</h1>
       <div className="list-group">
-        {moreData && moreData.map(({ id, name }) => (
+        {moreData.map(({ id, name }) => (
           <Link
             key={id}
             href={`/cats/${id}`}

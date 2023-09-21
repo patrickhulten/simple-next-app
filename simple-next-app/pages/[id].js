@@ -28,14 +28,6 @@ export default function Entry( { itemData }){
           <p className="card-text">{itemData.breed}</p>
           <a href="#" className="card-link">{itemData.year}</a>
         </div>
-              <h3> Puppies</h3>
-      <ol>
-         {itemData.offspring && itemData.offspring.map(({ id, named }) => (
-          <li key={id}>
-            {named}
-          </li>
-        ))}
-      </ol>
       </div>
     </Layout>
   );

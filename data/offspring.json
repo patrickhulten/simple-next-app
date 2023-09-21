@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "owner": 1,
+    "named" : "Skippy"
+  },
+  {
+    "id": 2,
+    "owner": 1,
+    "named" : "Libby"
+  },
+  {
+    "id": 3,
+    "owner": 1,
+    "named" : "Tippie"
+  },
+    {
+    "id": 4,
+    "owner": 2,
+    "named" : "Jeff"
+  },
+  {
+    "id": 5,
+    "owner": 2,
+    "named" : "Jib"
+  },
+  {
+    "id": 6,
+    "owner": 3,
+    "named" : "Scrappy-Doo"
+  }
+]
